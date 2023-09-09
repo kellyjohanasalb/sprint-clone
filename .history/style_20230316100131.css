@@ -1,0 +1,422 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 25%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.377);
+  border-radius: 20px;
+}
+.whatapp_Box {
+  width: 100%;
+}
+._header {
+  width: 100%;
+  background-color: #128c7e;
+  color: #fff;
+  padding: 13px;
+  position: relative;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.top_header_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.top_header_content h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+.right_top_icons {
+  gap: 14px;
+  display: flex;
+}
+.bottom_header_content {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  position: relative;
+  top: 13px;
+}
+
+.bottom_header_content button {
+  padding-bottom: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 23%;
+}
+.bottom_header_content button:first-child {
+  width: 10%;
+}
+.active {
+  border-bottom: 2px solid #fff !important;
+}
+
+.screen {
+  width: 100%;
+  height: 450px;
+  overflow-y: scroll;
+  position: relative;
+  display: flex;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.contact_list {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  transition-duration: 300ms;
+}
+.contact_list ul {
+  list-style-type: none;
+}
+
+.contact_list ul li {
+  position: relative;
+  /* width: 100%; */
+  display: flex;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+.contact_list ul li:hover {
+  background-color: rgba(0, 0, 0, 0.103);
+}
+.contact_list ul li .profile_section {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+.profile_section img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.377);
+}
+.contact_section h5 {
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+.contact_list small {
+  opacity: 0.6;
+  font-size: 0.7rem;
+}
+.msg_counter {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.count {
+  padding: 5px;
+  background-color: green;
+  color: #fff;
+  border-radius: 50%;
+  margin: 2px 0;
+  font-size: 0.6rem;
+}
+.status_area {
+  position: absolute;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  transition-duration: 300ms;
+}
+.status_area ul {
+  list-style-type: none;
+  position: relative;
+}
+.status_area ul li {
+  position: relative;
+  display: flex;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.my_status {
+  position: relative;
+  width: 35px;
+  margin-right: 10px;
+  height: 35px;
+}
+.my_status img {
+  width: 100%;
+  height: 100%;
+}
+.my_status .fa-plus {
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  font-weight: lighter;
+  background-color: green;
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 0.5rem;
+  border-radius: 50%;
+  padding: 2px 3px;
+}
+.status_contact {
+  margin-top: 2px;
+}
+.status_contact h5 {
+  font-weight: lighter;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+.status_contact p {
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+.statusTxt {
+  margin-left: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  opacity: 0.6;
+  font-size: 0.8rem;
+}
+img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.recent {
+  border: 3px solid #25d366 !important;
+  border-radius: 50%;
+}
+
+.call_area {
+  position: absolute;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(236, 238, 236);
+  transition-duration: 300ms;
+}
+.call_area ul {
+  list-style-type: none;
+}
+.call_area ul li {
+  position: relative;
+  display: flex;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.call_area {
+  overflow-y: scroll;
+  position: absolute;
+  width: 100%;
+  height: 380px;
+  max-height: 380px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-bottom: 20px;
+  left: 100%;
+  transition-duration: 200ms;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+}
+.call_area ul {
+  list-style: none;
+  position: relative;
+}
+
+.call_area ul li {
+  display: flex;
+  /* justify-content: center;
+    align-items: center; */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+}
+.icon_call {
+  width: 40px;
+  height: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  place-items: center;
+  display: grid;
+  margin-right: 14px;
+}
+.call_link {
+  margin-top: 3px;
+}
+.call_link h5 {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.call_link small {
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+
+.call_img {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  place-items: center;
+  display: grid;
+  margin-right: 14px;
+}
+.call_img img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.fa-long-arrow-right,
+.fa-long-arrow-left {
+  color: #25d366;
+  rotate: -50deg;
+}
+
+.calling_icon {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #25d366;
+}
+
+.community_area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    left: -100%;
+    transition-duration: 300ms;
+    padding: 5px;
+  }
+  .community_area ul {
+    position: relative;
+    list-style: none;
+  }
+  .community_area ul li {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+  }
+  .community_icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(194, 193, 193);
+    margin-right: 13px;
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  .community_icon i:last-child {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    background-color: #25d366;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    z-index: 99;
+    place-items: center;
+    display: grid;
+    font-size: 0.5rem;
+    border: 2px solid #fff;
+  }
+  .text_community {
+    margin-top: 13px;
+    font-size: 1rem;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.7;
+  }
+  .chatBtns{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: #fff;
+    border-radius: 50%;
+    right: 39%;
+    bottom: 13%;
+    z-index: 99;
+  }
+  .callBtns{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: #fff;
+    border-radius: 50%;
+    right: 39%;
+    bottom: 13%;
+    z-index: 99;
+    display: none;
+  }
+  .status_btns{
+    position: fixed;
+    right: 37%;
+    bottom: 11%;
+    z-index: 99;
+    display: none;
+  }
+  .block_Btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  .block_Btns button{
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+  }
+  .block_Btns button:first-child{
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+  }
+  .block_Btns button:last-child{
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    background-color: green;
+    color: #fff;
+  }

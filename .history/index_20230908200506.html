@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>whatsapp clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+
+      <!-- <div class="signInContainer" id="signInContainer">
+      <h2>Iniciar Sesión en WhatsApp</h2>
+      <form id="signInForm">
+          <input type="number" id="cellNumber" placeholder="Número de celular">
+          <input type="password" id="password" placeholder="Contraseña">
+          <button type="button" onclick="validateSignIn()">Iniciar Sesión</button>
+      </form>
+      <a href="#" onclick="showSignUp()">¿No tienes cuenta? Regístrate aquí</a>
+  </div>
+ 
+  <div class="signUpContainer" id="signUpContainer">
+    <h2>Create an account</h2>
+    <form id="signUpForm">
+        <input type="text" id="signUpName" placeholder="Nombre">
+        <input type="number" id="signUpCellNumber" placeholder="Número de celular">
+        <input type="password" id="signUpPassword" placeholder="Contraseña">
+        <input type="url" id="signUpImageUrl" placeholder="URL de la imagen">
+        <textarea id="signUpPhrase" placeholder="Ingresar frase"></textarea>
+        <button type="button" onclick="validateSignUp()">Sign up</button>
+    </form>
+    <a href="#" onclick="showSignIn()">Ya tienes cuenta? Inicia Sesión aquí</a>
+</div> -->  <!-- <div class="signInContainer" id="signInContainer">
+      <h2>Iniciar Sesión en WhatsApp</h2>
+      <form id="signInForm">
+          <input type="number" id="cellNumber" placeholder="Número de celular">
+          <input type="password" id="password" placeholder="Contraseña">
+          <button type="button" onclick="validateSignIn()">Iniciar Sesión</button>
+      </form>
+      <a href="#" onclick="showSignUp()">¿No tienes cuenta? Regístrate aquí</a>
+  </div>
+ 
+  <div class="signUpContainer" id="signUpContainer">
+    <h2>Create an account</h2>
+    <form id="signUpForm">
+        <input type="text" id="signUpName" placeholder="Nombre">
+        <input type="number" id="signUpCellNumber" placeholder="Número de celular">
+        <input type="password" id="signUpPassword" placeholder="Contraseña">
+        <input type="url" id="signUpImageUrl" placeholder="URL de la imagen">
+        <textarea id="signUpPhrase" placeholder="Ingresar frase"></textarea>
+        <button type="button" onclick="validateSignUp()">Sign up</button>
+    </form>
+    <a href="#" onclick="showSignIn()">Ya tienes cuenta? Inicia Sesión aquí</a>
+</div> -->
+    <div class="container">
+      <div class="whatapp_Box">
+        <div class="_header">
+          <div class="top_header_content">
+            <h5>WhatsApp</h5>
+            <div class="right_top_icons">
+              <i class="fa fa-camera"></i>
+              <i class="fa fa-search"></i>
+              <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="bottom_header_content">
+            <button id="user"><i class="fa fa-users"></i></button>
+            <button id="chats" class="active">Chats</button>
+            <button id="status">Status</button>
+            <button id="calls">Calls</button>
+          </div>
+        </div>
+
+        <div class="screen">
+          <div class="contact_list">
+            <ul>
+              <li>
+                <div class="profile_section">
+                  <img
+                    src="icons/pngtree-male-avatar-simple-cartoon-design-png-image_1934458.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="contact_section">
+                  <h5>Ankit Jangir 2</h5>
+                  <small>channel ka link</small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">10:00 am</small>
+                  <small class="count">14</small>
+                </div>
+              </li>
+              <li>
+                <div class="profile_section">
+                  <img src="icons/img2.png" alt="" />
+                </div>
+                <div class="contact_section">
+                  <h5>Aman</h5>
+                  <small>Lorem ipsum dolor sit</small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">11:00 am</small>
+                  <!-- <small class="count">44</small> -->
+                </div>
+              </li>
+              <li>
+                <div class="profile_section">
+                  <img src="icons/img3.png" alt="" />
+                </div>
+                <div class="contact_section">
+                  <h5>anish yadav</h5>
+                  <small>Lorem ipsum dolor sit amet consectetur</small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">10:00 am</small>
+                  <!-- <small class="count">44</small> -->
+                </div>
+              </li>
+              <li>
+                <div class="profile_section">
+                  <img src="icons/img4.png" alt="" />
+                </div>
+                <div class="contact_section">
+                  <h5>mitali</h5>
+                  <small>Lorem ipsum dolor sit amet consectetur</small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">11:09 am</small>
+                  <small class="count">69</small>
+                </div>
+              </li>
+              <li>
+                <div class="profile_section">
+                  <img src="icons/img5.png" alt="" />
+                </div>
+                <div class="contact_section">
+                  <h5>avni singh</h5>
+                  <small>quod quos ducimus libero. Voluptate!</small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">10:00 am</small>
+                  <small class="count">44</small>
+                </div>
+              </li>
+              <li>
+                <div class="profile_section">
+                  <img src="icons/img6.png" alt="" />
+                </div>
+                <div class="contact_section">
+                  <h5>rohan</h5>
+                  <small>quod quos ducimus libero. Voluptate!</small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">10:00 am</small>
+                  <!-- <small class="count">44</small> -->
+                </div>
+              </li>
+              <li>
+                <div class="profile_section">
+                  <img src="icons/img7.png" alt="" />
+                </div>
+                <div class="contact_section">
+                  <h5>harry</h5>
+                  <small>quod quos ducimus libero. Voluptate!</small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">10:00 am</small>
+                  <!-- <small class="count">44</small> -->
+                </div>
+              </li>
+              <li>
+                <div class="profile_section">
+                  <img src="icons/img8.png" alt="" />
+                </div>
+                <div class="contact_section">
+                  <h5>akhil</h5>
+                  <small>quod quos ducimus libero. Voluptate!</small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">10:00 am</small>
+                  <!-- <small class="count">44</small> -->
+                </div>
+              </li>
+              <li>
+                <div class="profile_section">
+                  <img src="icons/img9.png" alt="" />
+                </div>
+                <div class="contact_section">
+                  <h5>amit singh</h5>
+                  <small>quod quos ducimus libero. Voluptate!</small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">10:00 am</small>
+                  <!-- <small class="count">44</small> -->
+                </div>
+              </li>
+              <li>
+                <div class="profile_section">
+                  <img src="icons/img10.png" alt="" />
+                </div>
+                <div class="contact_section">
+                  <h5>farhan</h5>
+                  <small>quod quos ducimus libero. Voluptate!</small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">10:00 am</small>
+                  <small class="count">44</small>
+                </div>
+              </li>
+              <li>
+                <div class="profile_section">
+                  <img src="icons/img11.png" alt="" />
+                </div>
+                <div class="contact_section">
+                  <h5>rahul jangir</h5>
+                  <small>quod quos ducimus libero. Voluptate!</small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">10:00 am</small>
+                  <small class="count">44</small>
+                </div>
+              </li>
+            </ul>
+
+            <button class="chatBtns">  <i class="fa fa-commenting" aria-hidden="true"></i></button>
+
+          </div>
+
+          <!-- status area is the start -->
+          <div class="status_area">
+            <ul>
+              <li>
+                <div class="my_status">
+                  <img src="/icons/img3.png" alt="" />
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+                <div class="status_contact">
+                  <h5>My status</h5>
+                  <p>Tap to add status update</p>
+                </div>
+              </li>
+              <p class="statusTxt">recent update</p>
+              <li>
+                <div class="my_status recent">
+                  <img src="/status/6.jpeg" alt="" width="40px" />
+                </div>
+                <div class="status_contact">
+                  <h5>Anshu</h5>
+                  <p>5 miniuts ago</p>
+                </div>
+              </li>
+              <li>
+                <div class="my_status recent">
+                  <img src="/status/1.jpg" alt="" width="40px" />
+                </div>
+                <div class="status_contact">
+                  <h5>Lakshay</h5>
+                  <p>5 miniuts ago</p>
+                </div>
+              </li>
+              <li>
+                <div class="my_status recent">
+                  <img src="/status/2.jpg" alt="" width="40px" />
+                </div>
+                <div class="status_contact">
+                  <h5>Arbaj Dev</h5>
+                  <p>Yesterday, 9:13 am</p>
+                </div>
+              </li>
+              <li>
+                <div class="my_status recent">
+                  <img src="/status/3.jpg" alt="" width="40px" />
+                </div>
+                <div class="status_contact">
+                  <h5>Mahi</h5>
+                  <p>today, 3:49 pm</p>
+                </div>
+              </li>
+              <p class="statusTxt">Viewed updates</p>
+              <li>
+                <div class="my_status">
+                  <img src="/status/4.jpeg" alt="" width="40px" />
+                </div>
+                <div class="status_contact">
+                  <h5>Anish Sharma</h5>
+                  <p>Yesterday, 9:13 am</p>
+                </div>
+              </li>
+              <li>
+                <div class="my_status">
+                  <img src="/status/5.jpeg" alt="" width="40px" />
+                </div>
+                <div class="status_contact">
+                  <h5>Sachina</h5>
+                  <p>today, 7:19 am</p>
+                </div>
+              </li>
+              <li>
+                <div class="my_status">
+                  <img src="/status/6.jpeg" alt="" width="40px" />
+                </div>
+                <div class="status_contact">
+                  <h5>Anuj</h5>
+                  <p>Yesterday, 9:13 am</p>
+                </div>
+              </li>
+            </ul>
+            <div class="status_btns">
+                <div class="block_Btns">
+                    <button><i class="fa fa-pencil"></i></button>
+                    <button><i class="fa fa-camera"></i></button>
+                </div>
+            </div>
+          </div>
+          <!-- status area is the end -->
+
+          <!-- calls area is the start -->
+          <div class="call_area">
+            <ul>
+              <li>
+                <div class="icon_call">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </div>
+
+                <div class="call_link">
+                  <h5>Create call link</h5>
+                  <small>Share a link for your Whatsapp call</small>
+                </div>
+              </li>
+
+              <p class="statusTxt">Recent</p>
+            <li>
+              <div class="call_img">
+                <img src="icons/img3.png" alt="">
+              </div>
+
+              <div class="call_link">
+                <h5>Avinash Yadav</h5>
+                <small><i class="fa fa-long-arrow-right" aria-hidden="true"></i> 10 March, 6:09 pm</small>
+              </div>
+
+              <i class="fa fa-video-camera calling_icon" aria-hidden="true"></i>
+            </li>
+            <li>
+              <div class="call_img">
+                <img src="icons/img6.png" alt="">
+              </div>
+
+              <div class="call_link">
+                <h5>Aman Sharma</h5>
+                <small><i class="fa fa-long-arrow-left" aria-hidden="true"></i> 10 March, 6:09 pm</small>
+              </div>
+
+              <i class="fa fa-phone calling_icon" aria-hidden="true"></i>
+            </li>
+            <li>
+              <div class="call_img">
+                <img src="icons/img4.png" alt="">
+              </div>
+
+              <div class="call_link">
+                <h5>Arun Sharma</h5>
+                <small><i class="fa fa-long-arrow-left" aria-hidden="true"></i> 10 March, 6:09 pm</small>
+              </div>
+
+              <i class="fa fa-phone calling_icon" aria-hidden="true"></i>
+            </li>
+            <li>
+              <div class="call_img">
+                <img src="icons/img2.png" alt="">
+              </div>
+
+              <div class="call_link">
+                <h5>Ankit</h5>
+                <small><i class="fa fa-long-arrow-right" aria-hidden="true"></i> 10 March, 6:09 pm</small>
+              </div>
+
+              <i class="fa fa-video-camera calling_icon" aria-hidden="true"></i>
+            </li>
+            <li>
+              <div class="call_img">
+                <img src="icons/img7.png" alt="">
+              </div>
+
+              <div class="call_link">
+                <h5>Parmit</h5>
+                <small><i class="fa fa-long-arrow-right" aria-hidden="true"></i> 10 March, 6:09 pm</small>
+              </div>
+
+              <i class="fa fa-video-camera calling_icon" aria-hidden="true"></i>
+            </li>
+            </ul>
+
+            <button class="callBtns">
+                <i class="fa fa-phone"></i>
+            </button>
+          </div>
+          <!-- calls area is the end -->
+
+          <!-- community -->
+          <div class="community_area">
+            <ul>
+              <li>
+                <div class="community_icon">
+                  <i class="fa fa-users" aria-hidden="true"></i>
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+                <div class="text_community">
+                  <h5>New community</h5>
+                </div>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+    <script src="./"></script>
+    <script src="/script.js"></script>
+    
+  </body>
+</html>
